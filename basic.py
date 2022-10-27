@@ -1,27 +1,27 @@
-class Employee:
-    _empName = None
-    _empAddress = None
-    _empId = None
-    _empExperiance = None
-    _empSalary = None
+# class Employee:
+#     _empName = None
+#     _empAddress = None
+#     _empId = None
+#     _empExperiance = None
+#     _empSalary = None
 
-    def __init__(self):
-        self._empName = "Habib"
-        self._empAddress = "Swabi"
-        self._empId = 201167
-        self._empExperiance = "4 Years"
-        self._empSalary = 100000
+#     def __init__(self):
+#         self._empName = "Habib"
+#         self._empAddress = "Swabi"
+#         self._empId = 201167
+#         self._empExperiance = "4 Years"
+#         self._empSalary = 100000
 
-    def displayInfo(self):
-        print("Employee Information")
-        print("Employee name is ",self._empName)
-        print("Emp Address",self._empAddress)
-        print("Emp id is",self._empId)
-        print("Emp Exp",self._empExperiance)
-        print("Emp Salary is",self._empSalary)
+#     def displayInfo(self):
+#         print("Employee Information")
+#         print("Employee name is ",self._empName)
+#         print("Emp Address",self._empAddress)
+#         print("Emp id is",self._empId)
+#         print("Emp Exp",self._empExperiance)
+#         print("Emp Salary is",self._empSalary)
 
-emp = Employee()
-emp.displayInfo()
+# emp = Employee()
+# emp.displayInfo()
 
 
 # def printname(name):
@@ -74,3 +74,44 @@ emp.displayInfo()
 # class Employee:
 #     def Employee_name(name):
 #         input("enter name")
+
+
+#  Function overloading
+
+# def add(*arg):
+#     sum=0
+#     for i in arg:
+#         sum = sum+i
+#     return sum
+#     # return num1+num2
+#     # count=len(arg)
+#     # if count==4:
+#     #     sum = arg[0]+arg[2]+arg[3]
+#     #     return sum
+#     # else:
+#     #     sum = arg[0]+arg[1]
+#     #     return sum
+
+
+# print(add(20, 30))
+# print(add(20, 30,40))
+# print(add(20, 30,50,60))
+
+# Overloaded class
+
+
+
+class point:
+    global x,Y
+    def __init__(sele):
+        sele.x = 0
+        sele.y = 0
+    def __init__(sele,x,y):
+          sele.x = x
+          sele.y = y
+    def display(sele):
+        print("x = ",sele.x)
+        print("y = ",sele.y)
+point = point(20,30) 
+point.display()       
+        
